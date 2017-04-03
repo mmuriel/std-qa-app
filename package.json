@@ -1,0 +1,32 @@
+{
+  "name": "std-qa-app",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "httpserver": "browser-sync start --files 'src/**/*.html,src/**/*.css,src/**/*.js' --server 'src' --port '9000' --ui-port '9001'"
+  },
+  "author": "@maomuriel",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "jspm": "^0.16.53"
+  },
+  "jspm": {
+    "directories": {
+      "baseURL": "src"
+    },
+    "dependencies": {
+      "react": "npm:react@^15.4.2",
+      "react-dom": "npm:react-dom@^15.4.2",
+      "react-router": "npm:react-router@^4.0.0"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+}
+
