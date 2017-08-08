@@ -16,7 +16,7 @@ class Resultados extends React.Component {
       <div className="app__resultados">
       	{
       		this.props.canales.map((canal)=>{
-      			return (<Canal programas={canal.prog} nombre={canal.nom} key={canal.id}/>);
+      			return (<Canal programas={canal.prog} nombre={canal.nom} key={canal.id} timenow={this.props.timenow} timebase={this.props.timebase} />);
       		})
       	}
       </div>

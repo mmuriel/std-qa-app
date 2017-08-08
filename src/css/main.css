@@ -1,0 +1,109 @@
+body{
+
+	background-color: #FFF;
+	font-size: 11px;
+
+}
+
+.app{
+
+	width: 100%;
+	border: 1px solid #aa2233;
+	margin: auto;
+	font-size: 11px;
+
+}
+
+.horas{
+
+	width: 100vw;
+	height: 1.4rem;
+
+}
+
+.horas__hora{
+
+
+	width: 32.5vw;
+	float: left;
+	border-top: 1px solid red;
+	border-bottom: 1px solid red;
+	border-left: 0.01vw solid red;
+	padding: 0.3rem 0rem 0.3rem 0.3rem;
+
+}
+
+.canal{
+
+	min-height: 6.5rem;
+	width: 100vw;
+	border: 1px solid #221100;
+	border-top: none;
+	border-left: none;
+	overflow: hidden;
+
+}
+
+
+.canal__header{
+
+	height: 1rem;
+	border-bottom: 1px solid grey;
+	padding: 0.25rem;
+}
+
+
+
+.canal__programas{
+
+	/*
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	*/
+	
+	/* display: block; */
+	position: relative;
+	width: 1000vw;
+	overflow: hidden;
+	height: 5rem;
+	display: block;
+}
+
+
+.canal__programas__programa{
+
+	position: absolute;
+	border-left: 1px dashed #000;
+	height: 100%;
+	padding: 0.25rem;
+	float: left;
+
+
+}
+
+
+.canal__programas__programa__btns{
+
+
+	position: absolute;
+    display: block;
+    bottom: 10px;
+    right: 10px;
+    width: 100%;
+
+}
+
+
+.canal__programas__programa__btns button{
+
+	font-size: 0.5rem;
+	padding: 0.1rem;
+	margin: auto;
+
+
+}
+
+
+
+

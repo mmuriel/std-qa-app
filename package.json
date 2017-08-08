@@ -4,14 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --compilers js:babel-core/register",
     "httpserver": "browser-sync start --files 'src/**/*.html,src/**/*.css,src/**/*.js' --server 'src' --port '9000' --ui-port '9001'"
   },
   "author": "@maomuriel",
   "license": "ISC",
   "devDependencies": {
-    "babel-cli": "^6.24.0",
-    "jspm": "^0.16.53"
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "chai": "^4.0.2",
+    "jspm": "^0.16.53",
+    "mocha": "^3.4.2",
+    "babel-polyfill": "^6.23.0"
   },
   "jspm": {
     "directories": {
@@ -20,7 +26,7 @@
     "dependencies": {
       "react": "npm:react@^15.4.2",
       "react-dom": "npm:react-dom@^15.4.2",
-      "react-router": "npm:react-router@^4.0.0"
+      "react-router-dom": "npm:react-router-dom@^4.1.2"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",
@@ -29,4 +35,3 @@
     }
   }
 }
-
