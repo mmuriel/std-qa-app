@@ -1,5 +1,5 @@
 import React from 'react';
-import Programa from './Programa.js';
+import Programa from '../programa/ProgramaContainer.js';
 
 class Canal extends React.Component {
 
@@ -10,10 +10,11 @@ class Canal extends React.Component {
 
 	render() {
 
+		/*
 		let programas = this.props.programas.map((prg)=>{
 					return <Programa titulo={prg.nom} ini={prg.ini} fin={prg.fin} key={prg.id} timenow={this.props.timenow} timebase={this.props.timebase} />
 		})
-
+		
 		return (
 			<div className="canal">
 				<div className="canal__header">
@@ -24,6 +25,8 @@ class Canal extends React.Component {
 				</div>
 			</div>
 		);
+		*/
+		return (<div className="canal">MM</div>);
 	}
 }
 

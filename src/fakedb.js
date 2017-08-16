@@ -1,4 +1,4 @@
-import LastOclockTimeDefiner from 'js/classes/LastOclockTimeDefiner';
+import LastOclockTimeDefiner from 'js/helpers/LastOclockTimeDefiner';
 
 let dateBase = new Date();
 let lastOclockTimer = new LastOclockTimeDefiner(dateBase);

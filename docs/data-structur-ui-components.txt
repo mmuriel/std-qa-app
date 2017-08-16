@@ -1,0 +1,70 @@
+/* Momento de consulta: */
+
+timebase: 8818837473772; /* Timestamp del momento tipo xx:00, xx:15, xx:30, xx:45 que sirve de base para desplegar la info
+
+
+/* Estructura componente Canal */
+
+{
+	id: 23,
+	timezone: -5, /* GMT -5 */
+	nombre: CANAL DEL TIEMPO,
+	programacion:[idprg1, idprg2, idprg3, ... idprgn]
+
+}
+
+
+/* Estructura componente Evento */
+
+{
+	id: 34992020309,
+	nom: 'XXXXXXXXXX',
+	chn: 23,
+	fec_hor: 8818837473772, /* TIMESTAMP */
+	dur: 3600, /* Tiempo en segundos */
+	sin: 'Giggly hey noiselessly and darn came far a less and for thus scratched groomed more and scallop raccoon more commendably among during titillating snootily the built mindfully ouch before.'
+	ctr:[idctr1, idctr2, idctr3, idctr4, ... idctrn]
+
+}
+
+
+/* Estructura componente Reporte*/
+
+{
+	
+	id: ae298d8a038e026100da28847378eda4,
+	evt: 34992020309,
+	tipo: 1, /* enum: [1 (ok),0 (error)] */
+	fechora: 1501673700, /* Fecha hora en formato timestamp */
+	/* if (tipo == 0) */
+	mot: 1, /* Motivo del error, enum [101 (Error hora), 102 (Programación no coincide)] */
+	des: 'XXXXX xxxxxxx yyyyyyyyyy ppppppp ggggg', /* Descripción: Campo abierto */
+
+}
+
+
+
+
+/* Estructura componente CanalesList */
+
+{
+	
+	canales: [ chn1, chn2, chn3, ... chnN]
+
+}
+
+
+/* Estructura Programacion */
+
+{
+	programacion: [prg1, prg2, prg3, ... prgN]
+}
+
+
+/* Estructura Reportes */
+
+{
+	
+	reportes: [rep1, rep2, rep3, ... repN]
+
+}

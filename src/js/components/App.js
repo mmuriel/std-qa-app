@@ -1,10 +1,11 @@
-
 import React from 'react';
-import Home from './Routes/Home.js';
-import Login from './Routes/Login.js';
-import Event from './Routes/Event.js';
-import Logout from './Routes/Logout.js';
-import Forgot from './Routes/Forgot.js';
+import Home from '../routes/Home.js';
+import Login from '../routes/Login.js';
+import Event from '../routes/Event.js';
+import Logout from '../routes/Logout.js';
+import Forgot from '../routes/Forgot.js';
+
+import store from '../redux-components/store';
 
 import {
   Route,
@@ -15,10 +16,13 @@ class App extends React.Component {
 
 	constructor(props) {
 		super(props);
+		/*
 		this.state = {
 			canales: this.props.canales
 		}
+		*/
 		//this.handlingQuerySearch = this.handlingQuerySearch.bind(this);
+		console.log(store.getState());
 		
 	}
 
