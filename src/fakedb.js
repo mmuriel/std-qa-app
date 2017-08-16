@@ -4,10 +4,72 @@ let dateBase = new Date();
 let lastOclockTimer = new LastOclockTimeDefiner(dateBase);
 let lastOclock = lastOclockTimer.defineLastOclockTime();
 
-console.log("MMMMMMM...\n");
 console.log(lastOclock);
 console.log(lastOclock.getTime()/1000);
 
+
+
+let state = {
+
+
+	timebase: 0,
+	canales:[
+
+		{
+			id: 23,
+			timezone: -5, /* GMT -5 */
+			nombre: 'CANAL DEL TIEMPO',
+			programacion:[]
+
+		},
+		{
+			id: 24,
+			timezone: -5, /* GMT -5 */
+			nombre: 'CANAL RCN',
+			programacion:[]
+
+		},
+		{
+			id: 40,
+			timezone: -5, /* GMT -5 */
+			nombre: 'CANAL RCN HD',
+			programacion:[]
+
+		},
+		{
+			id: 53,
+			timezone: -5, /* GMT -5 */
+			nombre: 'FOX SPORTS',
+			programacion:[]
+
+		},
+		{
+			id: 60,
+			timezone: -5, /* GMT -5 */
+			nombre: 'FOX SPORTS HD',
+			programacion:[]
+
+		}
+
+	],
+	programacion:[
+
+		{
+			id: 34992020309,
+			nom: 'Evento 23 - 1',
+			chn: 23,
+			fec_hor: 8818837473772, /* TIMESTAMP */
+			dur: 3600, /* Tiempo en segundos */
+			sin: 'Giggly hey noiselessly and darn came far a less and for thus scratched groomed more and scallop raccoon more commendably among during titillating snootily the built mindfully ouch before.',
+			ctr:[]
+		}
+
+	]
+
+
+}
+
+/*
 let CanalesDb = {
 
 	canales : [
@@ -35,7 +97,7 @@ let CanalesDb = {
 	}]
 }, 
 
-/*
+
 	{
 	"id": "644",
 	"nom": "BBC HD",
@@ -409,8 +471,6 @@ let CanalesDb = {
 	
 }]
 */
-]
-}
 
 
-export default CanalesDb
+export default state;

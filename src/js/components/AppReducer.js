@@ -1,6 +1,6 @@
 import LastOclockTimeDefiner from '../helpers/LastOclockTimeDefiner';
 
-let TimeBaseReducer = (state = 0, action) =>{
+let TimeBaseReducer = (state = new Date(), action) =>{
 
 	switch(action.type){
 

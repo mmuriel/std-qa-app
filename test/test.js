@@ -243,11 +243,10 @@ describe('Redux Reducer: CanalReducer',() => {
 
 describe('Redux Reducer: AppReducer',() => {
 	//Sets timeout more than default 2000 milisecs
-	let state = 0;
+	//let state = ;
 	it ('Seteando el tiempo base para 1501678000000 (TIMESTAMP para: 2017-08-02 12:46:40) debe retornar 1501677900000 (TIMESTAMP para: 2017-08-02 12:45:00 )',() => {
 
-		
-		
+		let state;		
 		let action = {
 
 			type: 'SET_TIMEBASE',
@@ -258,6 +257,28 @@ describe('Redux Reducer: AppReducer',() => {
 		chai.assert.equal('45:00',state.getMinutes()+':'+state.getSeconds()+'0',"El valor esperado y registrado el diferente");
 
 	});
+
+
+	it ('Si no se provee un tipo de acción válido, debe retornar un objeto Date con el instante actual',() => {
+
+		let state;		
+		let action = {
+
+			type: 'NO_VALID_ACTION',
+			timebase: new Date(1501678000000)
+
+		}
+		state = AppReducer(state,action);
+		let actualDate = new Date();
+		let expectedVal = actualDate.getHours()+":"+actualDate.getMinutes();
+		let stateVal = state.getHours()+":"+state.getMinutes();
+		chai.assert.equal(expectedVal,stateVal,"El valor por defecto del reducer no esta bien configurado, debe generar la misma hora:minutos de un new Date()");
+
+	});
+
+
+
+
 });
 
 
